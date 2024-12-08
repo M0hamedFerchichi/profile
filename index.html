@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ferchichi - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+                <a href="#" class="logo">Mohamed Ferchichi</a>
+                <ul>
+                    <li><a href="#" onclick="showHome()">Home</a></li>
+                    <li><a href="#" onclick="showAbout()">About</a></li>
+                    <li><a href="#" onclick="showServices()">Services</a></li>
+                    <li><a href="#" onclick="showContact()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contains">
+               
+                <div class="section-1" id="home-section">
+                    <h1>Hi, I'm Mohamed Ferchichi</h1>
+                    <h3>Computer science student</h3>
+                    <p>Passionate about web development, with expertise in both front-end and back-end technologies.</p>
+                    <a class="btn" href="mailto:mohamedferchichi0001@gamil.com">Contact Me</a>
+                </div>
+
+          
+                <div class="section-1" id="about-section" style="display:none;">
+                    <h1>About Me</h1>
+                    <h3>Student & Web Developer</h3>
+                    <p>I am a student of Computer Science at ISAMM, 19 years old. I love problem-solving and coding. Outside of my studies, I am a gym enthusiast and aim to become a Big Data Engineer in the future.</p>
+                    <p>I have also worked on 2 projects:
+                        <ul>
+                            <li>An article website about AI</li>
+                            <li>A website for a travel agency</li>
+                        </ul>
+                    </p>
+                    <a class="btn" href="mailto:mohamedferchichi0001@gamil.com">Contact Me</a>
+                </div>
+
+                <div class="section-1" id="services-section" style="display:none;">
+                    <h1>Services</h1>
+                    <h3>Technologies I Work With</h3>
+                    <p>Here are the technologies and skills I work with:</p>
+                    <ul>
+                        <li><i class="fas fa-laptop-code"></i> C Programming</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li><i class="fab fa-php"></i> PHP</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                    </ul>
+                    <h3>Typing Speed & Accuracy</h3>
+                    <p>I have a typing speed of 55 words per minute with an accuracy of 92%.</p>
+                    <h3>Problem-Solving Competitions</h3>
+                    <p>I actively participate in problem-solving competitions and love the challenge of solving complex problems.</p>
+                    <a class="btn" href="mailto:mohamedferchichi0001@gamil.com">Contact Me</a>
+                </div>
+
+                <div class="section-1" id="contact-section" style="display:none;">
+                    <h1>Contact Me</h1>
+                    <p>You can reach me via any of the following platforms:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/mohamed.ferchichi.16547" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/m0hamed_ferchichi/?igsh=ZG83ZjAwM3l2MTd3" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/mohamed-ferchichi-5626b3330/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/M0hamedFerchichi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="tel:+21655018704"><i class="fas fa-phone"></i> Phone: 55018704</a></li>
+                        <li><a href="mailto:mohamedferchichi0001@gamil.com"><i class="fas fa-envelope"></i> Email: mohamedferchichi0001@gamil.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-2" id="home-photo">
+                    <img src="hama a.jpg" alt="Mohamed Ferchichi" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showHome() {
+            document.getElementById("home-section").style.display = "block";
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("services-section").style.display = "none";
+            document.getElementById("contact-section").style.display = "none";
+            document.getElementById("home-photo").style.display = "block";
+        }
+
+        function showAbout() {
+            document.getElementById("home-section").style.display = "none";
+            document.getElementById("about-section").style.display = "block";
+            document.getElementById("services-section").style.display = "none";
+            document.getElementById("contact-section").style.display = "none";
+            document.getElementById("home-photo").style.display = "none";
+        }
+
+        function showServices() {
+            document.getElementById("home-section").style.display = "none";
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("services-section").style.display = "block";
+            document.getElementById("contact-section").style.display = "none";
+            document.getElementById("home-photo").style.display = "none";
+        }
+
+        function showContact() {
+            document.getElementById("home-section").style.display = "none";
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("services-section").style.display = "none";
+            document.getElementById("contact-section").style.display = "block";
+            document.getElementById("home-photo").style.display = "none";
+        }
+    </script>
+</body>
+</html>
